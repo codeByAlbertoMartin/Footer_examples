@@ -1,0 +1,16 @@
+
+header{
+    ul{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top:20px;
+    list-style: none;
+    }
+    h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 50;
+    }
+}

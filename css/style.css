@@ -4,6 +4,103 @@
   box-sizing: border-box;
 }
 
+footer {
+  background-color: #F7F9FC;
+  width: 1440px;
+  height: 405px;
+  margin: auto;
+}
+footer .footer_principal {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 72px;
+  padding-bottom: 56px;
+}
+footer .footer_principal__info p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 314px;
+}
+footer .footer_principal__links {
+  display: flex;
+  gap: 72px;
+}
+footer .footer_principal__links-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer_principal__links-menu h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+footer .footer_principal__links-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer_principal__links-menu ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer_principal__links-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(4, 5, 5, 0.8);
+}
+footer .footer_linea {
+  width: 1248px;
+  height: 1px;
+  background: rgba(4, 5, 5, 0.32);
+  margin-left: 96px;
+  margin-bottom: 32px;
+}
+footer .footer_redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+footer .footer_redes-sociales ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 32px;
+}
+footer .footer_redes-sociales li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 20px;
+  list-style: none;
+}
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50;
+}
+
+html * {
+  font-family: "Poppins";
+}
+
 body {
   overflow-x: hidden;
 }

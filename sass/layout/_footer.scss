@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+footer{
+    background-color: v.$bg-color;
+    width: 1440px;
+    height: 405px;
+    margin: auto;
+    .footer_principal{
+        display:flex;
+        justify-content: space-around;
+        padding-top: 72px;
+        padding-bottom: 56px;
+        &__info{
+            p{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 314px;
+            }
+        }
+        &__links{
+            display:flex;
+            gap: 72px;
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                h3{
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    letter-spacing: 1.12px;
+                    text-transform: uppercase;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    li{
+                        @include m.reset-list();
+                        a{
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            color: rgba(4, 5, 5, 0.80);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_linea{
+        width: 1248px;
+        height: 1px;
+        background: rgba(4, 5, 5, 0.32);
+        margin-left: 96px;
+        margin-bottom: 32px;
+    }
+    .footer_redes-sociales{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        ul{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            gap: 32px;
+        }
+        li{
+            @include m.reset-list();
+        }
+    }
+}
