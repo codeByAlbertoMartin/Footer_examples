@@ -601,3 +601,154 @@ footer.footer-simple{
         }
     }
 }
+
+footer.footer-gradient{
+    background-color: white;
+    width: 1440px;
+    height: 750px;
+    margin: auto;
+    position:relative;
+    .footer_started{
+        position:absolute;
+        background-image:linear-gradient(90deg, #FC00FF 0%, #00DBDE 100%);
+        width: 1140px;
+        height: 150px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        margin:auto;
+        z-index: 1;
+        top:100px;
+        left:150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__info{
+            padding-left: 24px;
+            h3{
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 18px;
+                padding-top:40px;
+            }
+            ul{
+                display:flex;
+                gap:24px;
+                li{
+                    @include m.reset-list();
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+        &__buttons{
+            display:flex;
+            gap: 24px;
+            padding-right: 24px;
+            .started{
+                background-color: black;
+                color: white;  
+                padding:5px 26px;  
+                
+            }
+            .contact{
+                background-color: white;
+                color: black;   
+                padding:5px 26px; 
+            }
+        }
+    }
+    .footer_principal{
+        position:absolute;
+        top: 175px;
+        width: 1440px;
+        background-color: #31135E;
+        color:white;        
+        display: flex;
+        flex-direction: column;
+        padding-left: 150px;
+        padding-right: 150px;
+        &__logo{
+            margin-bottom: 40px;
+            margin-top:180px;
+        }
+        &__menu{
+            display: flex;
+            gap: 32px;
+            justify-content: space-between;
+            div h4{
+                margin-bottom:32px;
+            }
+            ul{
+                display:flex;
+                flex-direction: column;
+                li{
+                    @include m.reset-list();
+                    a{
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;      
+                        color:white;
+                        text-decoration: none;        
+                    }
+                }
+            }
+            &-social{
+                ul{
+                    display:flex;
+                    flex-direction: row;
+                    gap:16px;
+                    li{
+                        @include m.reset-list();
+                        a{
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;      
+                            color:white;
+                            text-decoration: none;        
+                        }
+                    }
+                }
+            }
+        }    
+        &__legal{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;      
+            color:white;
+            ul{
+                display:flex;
+                gap:40px;
+                li{
+                    @include m.reset-list();
+                    a{
+                        color:white;
+                        text-decoration: none;        
+                    }
+                }
+            }
+        }
+        
+    }
+}
