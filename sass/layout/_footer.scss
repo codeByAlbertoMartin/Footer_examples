@@ -76,6 +76,7 @@ footer.footer-business-light-1{
         }
     }
 }
+
 footer.footer-business-light-2{
     display: flex;
     width: 1440px;
@@ -170,6 +171,7 @@ footer.footer-business-light-2{
     
     
 }
+
 footer.footer-business-dark-1{
     display: flex;
     width: 1440px;
@@ -292,6 +294,7 @@ footer.footer-business-dark-1{
         }
     }
 }
+
 footer.footer-business-dark-2{
     display:flex;
     width: 1440px;
@@ -500,6 +503,99 @@ footer.footer-phone{
                     font-weight: 400;
                     line-height: normal;
                     color: rgba(255, 255, 255, 0.80);
+                }
+            }
+        }
+    }
+}
+
+footer.footer-simple{
+    background-color:  #22242A;
+    width: 1440px;
+    height: 224px;
+    display: flex;
+    gap:136px;
+    align-items: center;
+    .footer_logo{
+        padding-left: 55px;
+    }
+    .footer_principal{
+        display:flex;
+        flex-direction: column;  
+        &__menuSocial{
+            display:flex;
+            gap:300px;
+            &-menu  ul{
+                display:flex;
+                gap:40px;
+                li{
+                    @include m.reset-list();
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            &-social{
+                display:flex;
+                gap:70px;
+                margin-bottom:32px;
+                &-buscador{
+                    background-color: white;
+                    display: flex;
+                    width: 220px;
+                    align-items: center;
+                    border-radius: 10px;
+                    padding:2px;
+                    input{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding-left: 13px;
+                        border:transparent
+                    }
+                    img{
+                        display: inline-block;
+                        padding:5px;
+                    }
+                }
+                &-redes ul{
+                    display:flex;
+                    gap: 24px;
+                    li{                        
+                        @include m.reset-list();
+                        a{
+                            color:white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        &__legal{  
+            margin-top:37px;        
+            ul{
+                display:flex;
+                gap:40px;
+                li{
+                    @include m.reset-list();
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
                 }
             }
         }

@@ -543,6 +543,105 @@ footer.footer-phone .footer_legal ul li a {
   color: rgba(255, 255, 255, 0.8);
 }
 
+footer.footer-simple {
+  background-color: #22242A;
+  width: 1440px;
+  height: 224px;
+  display: flex;
+  gap: 136px;
+  align-items: center;
+}
+footer.footer-simple .footer_logo {
+  padding-left: 55px;
+}
+footer.footer-simple .footer_principal {
+  display: flex;
+  flex-direction: column;
+}
+footer.footer-simple .footer_principal__menuSocial {
+  display: flex;
+  gap: 300px;
+}
+footer.footer-simple .footer_principal__menuSocial-menu ul {
+  display: flex;
+  gap: 40px;
+}
+footer.footer-simple .footer_principal__menuSocial-menu ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.footer-simple .footer_principal__menuSocial-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer.footer-simple .footer_principal__menuSocial-social {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 32px;
+}
+footer.footer-simple .footer_principal__menuSocial-social-buscador {
+  background-color: white;
+  display: flex;
+  width: 220px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2px;
+}
+footer.footer-simple .footer_principal__menuSocial-social-buscador input {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 13px;
+  border: transparent;
+}
+footer.footer-simple .footer_principal__menuSocial-social-buscador img {
+  display: inline-block;
+  padding: 5px;
+}
+footer.footer-simple .footer_principal__menuSocial-social-redes ul {
+  display: flex;
+  gap: 24px;
+}
+footer.footer-simple .footer_principal__menuSocial-social-redes ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.footer-simple .footer_principal__menuSocial-social-redes ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer.footer-simple .footer_principal__legal {
+  margin-top: 37px;
+}
+footer.footer-simple .footer_principal__legal ul {
+  display: flex;
+  gap: 40px;
+}
+footer.footer-simple .footer_principal__legal ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.footer-simple .footer_principal__legal ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 header ul {
   gap: 10px;
   display: flex;
