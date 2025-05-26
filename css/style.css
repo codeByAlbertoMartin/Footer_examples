@@ -423,6 +423,7 @@ footer.footer-phone {
   padding-left: 33px;
   padding-top: 96px;
   padding-right: 46px;
+  margin: auto;
 }
 footer.footer-phone .footer_principal {
   display: flex;
@@ -550,6 +551,7 @@ footer.footer-simple {
   display: flex;
   gap: 136px;
   align-items: center;
+  margin: auto;
 }
 footer.footer-simple .footer_logo {
   padding-left: 55px;
@@ -795,6 +797,84 @@ footer.footer-gradient .footer_principal__legal ul li {
 footer.footer-gradient .footer_principal__legal ul li a {
   color: white;
   text-decoration: none;
+}
+
+footer.footer-social {
+  background-color: #000;
+  color: white;
+}
+footer.footer-social .footer_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 60px;
+}
+footer.footer-social .footer_principal__icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.footer-social .footer_principal__icons li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.footer-social .footer_principal__menu {
+  display: flex;
+  gap: 220px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  padding-left: 350px;
+}
+footer.footer-social .footer_principal__menu ul {
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+footer.footer-social .footer_principal__menu li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.footer-social .footer_principal__menu li a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  text-decoration: none;
+}
+footer.footer-social .footer_principal__menu button {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  padding: 5px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: white;
+}
+footer.footer-social .footer_principal__linea {
+  width: 1203px;
+  height: 1px;
+  margin: auto;
+}
+footer.footer-social .footer_principal__copyright {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 5px;
+}
+footer.footer-social .footer_principal__copyright p {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 header ul {

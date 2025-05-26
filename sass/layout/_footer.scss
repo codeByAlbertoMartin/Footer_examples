@@ -386,6 +386,7 @@ footer.footer-phone{
     padding-left: 33px;
     padding-top: 96px;
     padding-right: 46px;
+    margin: auto;
     .footer_principal{
         display: flex;
         justify-content: space-between;
@@ -516,6 +517,7 @@ footer.footer-simple{
     display: flex;
     gap:136px;
     align-items: center;
+    margin:auto;
     .footer_logo{
         padding-left: 55px;
     }
@@ -750,5 +752,82 @@ footer.footer-gradient{
             }
         }
         
+    }
+}
+
+footer.footer-social{
+    background-color: #000;
+    color:white;
+    .footer_principal{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        padding-top: 60px;
+        &__icons{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;     
+            }
+            li{
+                @include m.reset-list();
+            }
+        }
+        &__menu{
+            display: flex;
+            gap:220px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 80px;
+            padding-left: 350px;
+            ul{
+                display: inline-flex;
+                justify-content: flex-start;  
+                gap:40px;
+              }
+              li{
+                  @include m.reset-list();
+                  a{
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color:white;
+                    text-decoration: none;
+                  }
+              }
+              button{
+                display: flex;
+                width: 150px;
+                height: 50px;
+                padding: 5px 26px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+                background-color: white;
+              }
+        }
+        &__linea{
+            width: 1203px;
+            height: 1px;
+            margin:auto
+        }
+        &__copyright{
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 5px;
+            p{
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            
+        }
     }
 }
