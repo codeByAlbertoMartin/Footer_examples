@@ -777,7 +777,8 @@ footer.footer-social{
             display: flex;
             gap:220px;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
+            padding-right:100px;
             margin-bottom: 80px;
             ul{
                 display: flex;
